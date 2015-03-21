@@ -1,0 +1,17 @@
+!public/storage
+*.cache
+*.db*
+*.sock
+.env.backup
+.env.testing
+.phpstorm.meta.php
+/.idea
+/.vscode
+_ide_helper*.php
+cghooks.lock
+docker-compose.override.yml
+public/css
+public/js
+public/mix-manifest.json
+public/shared_key*
+.log*

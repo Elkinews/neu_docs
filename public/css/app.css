@@ -1,0 +1,277 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTk3j77e.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTA3j77e.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTs3j77e.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTo3j77e.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/XRXI3I6Li01BKofiOc5wtlZ2di8HDLshdTQ3jw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.v-application div .primary {
+  background-color: #3D769E !important;
+  border-color: #3D769E !important;
+}
+
+.v-application div .primary--text {
+  color: #3D769E !important;
+  caret-color: #3D769E !important;
+}
+
+.v-application div .error--text {
+  color: #c32c39 !important;
+  caret-color: #c32c39 !important;
+}
+
+.v-application div .error {
+  background-color: #c32c39 !important;
+  border-color: #c32c39 !important;
+}
+
+.v-application div .success {
+  background-color: #547d36 !important;
+  border-color: #547d36 !important;
+}
+
+.v-application div .success--text {
+  color: #547d36 !important;
+  caret-color: #547d36 !important;
+}
+
+.error--text {
+  color: #c32c39 !important;
+  caret-color: #c32c39 !important;
+}
+
+.v-menu__content {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.v-menu__content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.v-menu__content::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.v-menu__content::-webkit-scrollbar-thumb {
+  background: #3D769E;
+  border-radius: 3px;
+}
+
+.v-menu__content::-webkit-scrollbar-thumb:hover {
+  background: #3D769E;
+}
+
+.create-new-tab-modal {
+  overflow-y: visible !important;
+}
+
+.nde-upload-modal {
+  overflow-y: visible !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.nde-general-user-form .v-label,
+.nde-province-form .v-label {
+  line-height: 1.5 !important;
+}
+
+.v-input .v-input__control .v-input__slot {
+  box-shadow: 0 3px 1px -2px #424242, 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.nde-auth-error {
+  color: #c32c39;
+}
+
+.nde-auth-error-title {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.nde-auth-login {
+  max-width: 400px;
+}
+
+.nde-auth-form .nde-auth-form-title {
+  font-size: 2.333rem;
+  margin-bottom: 60px;
+}
+
+.nde-auth-form .nde-auth-default-btn {
+  width: 30%;
+  border-radius: 5px;
+  color: #0C0C0C;
+}
+
+.nde-auth-form .nde-auth-primary-btn {
+  width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .nde-auth-form .nde-auth-default-btn,
+.nde-auth-form .nde-auth-primary-btn {
+    width: 48%;
+  }
+}
+.v-btn {
+  text-transform: none;
+}
+
+.v-btn.primary {
+  background-color: #3D769E !important;
+  border-color: #3D769E !important;
+}
+
+.v-btn.primary--text {
+  color: #3D769E !important;
+  caret-color: #3D769E !important;
+}
+
+.v-btn.error {
+  background-color: #c32c39 !important;
+  border-color: #c32c39 !important;
+}
+
+.v-btn.error--text {
+  color: #c32c39 !important;
+  caret-color: #c32c39 !important;
+  background-color: #f9e1e1 !important;
+}
+
+.v-btn.success {
+  background-color: #547d36 !important;
+  border-color: #547d36 !important;
+}
+
+.v-btn.success--text {
+  color: #547d36 !important;
+  caret-color: #547d36 !important;
+  background-color: #f2fbea !important;
+}
+
+.v-btn.white {
+  background-color: #ffffff !important;
+  color: #9a9ea1 !important;
+}
+
+.v-btn.white--text {
+  caret-color: #9a9ea1 !important;
+  color: #9a9ea1 !important;
+  background-color: #ffffff !important;
+}
+
+.v-btn.dark {
+  background-color: #343c42 !important;
+  border-color: #343c42 !important;
+  color: #ffffff !important;
+}
+
+.v-btn.dark--text {
+  background-color: #ffffff !important;
+  border-color: #343c42 !important;
+  color: #343c42 !important;
+}
+
+.v-btn.default {
+  background-color: #ebeced !important;
+  border-color: #ebeced !important;
+  color: #636B6E !important;
+}
+
+.v-alert__wrapper {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nde-default-alert {
+  background-color: #f2fbea !important;
+}
+
+.nde-dropdown-mt {
+  margin-top: 5px;
+}
+
+.nde-selected-item-row {
+  background-color: #f2fbea !important;
+}
+
+.nde-selected-item-row td.text-start {
+  color: #40513A !important;
+}
+
+html {
+  font-size: 1rem !important;
+  scroll-behavior: smooth;
+}
+
+body,
+.v-application {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}

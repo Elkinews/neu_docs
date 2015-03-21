@@ -1,0 +1,45 @@
+version: 0.2
+env:
+    parameter-store:
+        APP_KEY: /qa12.sima.io/app_key
+
+phases:
+    install:
+        runtime-versions:
+            nodejs: 12
+            php: 7.4
+        commands:
+            - n 16
+            - echo "installing something that's local"
+#            - printenv
+    pre_build:
+        commands:
+            - yum -y install amazon-linux-extras-yum-plugin deltarpm yum-plugin-fastestmirror yum-utils
+            - yum -y install php php-bcmath php-cli php-common php-fpm php-gd php-imap php-intl php-ldap php-mbstring php-opcache php-pdo php-pear php-pecl-igbinary php-pecl-msgpack  php-pecl-zip php-pgsql php-process php-soap php-xml
+            - yum -y update
+            - php -r 'readfile("https://getcomposer.org/installer");' | php -- --install-dir=/usr/bin --filename=composer
+            - curl -fsSL "https://rpm.nodesource.com/setup_16.x" | bash -
+    build:
+        commands:
+            - echo "this is the build block"
+            - cp .env.example .env
+            #generate artisan key and place in parameter store in aws before first build
+            #- ./artisan key:generate
+            ##for deploy##
+            - sed -i "s|^APP_KEY=|APP_KEY=${APP_KEY}|g" .env
+            #for local
+#            - sed -i "s|^APP_KEY=|APP_KEY=base64:0XbJyjiSBi9gWVhNvuJvCN+2T9laJ/0zWpi8zuZb7Z4=|g" .env
+            - sed -i "s|^APP_ENV=local|APP_ENV=production|g" .env
+            - composer install
+            - npm install
+            - npm run prod
+            - echo "we can run some tests here"
+    post_build:
+        commands:        
+            - echo "this is the post build phase"
+            
+artifacts:
+    files:
+        - '**/*'
+ #can customize what files can become part of artifact
+    name: nde-frontend-artifact

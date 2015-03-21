@@ -1,0 +1,64 @@
+.v-btn {
+  text-transform: none;
+
+  &.primary {
+    background-color: $primaryColor !important;
+    border-color: $primaryColor !important;
+  }
+
+  &.primary--text {
+    color: $primaryColor !important;
+    caret-color: $primaryColor !important;
+  }
+
+  &.error {
+    background-color: $errorColor !important;
+    border-color: $errorColor !important;
+  }
+
+  &.error--text {
+    color: $errorColor !important;
+    caret-color: $errorColor !important;
+    background-color: $errorGreyColor !important;
+  }
+
+  &.success {
+    background-color: $successColor !important;
+    border-color: $successColor !important;
+  }
+
+  &.success--text {
+    color: $successColor !important;
+    caret-color: $successColor !important;
+    background-color: $successGreyColor !important;
+  }
+
+  &.white {
+    background-color: $whiteColor !important;
+    color: $greyColor !important;
+  }
+
+  &.white--text {
+    caret-color: $greyColor !important;
+    color: $greyColor !important;
+    background-color: $whiteColor !important;
+  }
+
+  &.dark {
+    background-color: $darkGreyColor !important;
+    border-color: $darkGreyColor !important;
+    color: $whiteColor !important;
+  }
+
+  &.dark--text {
+    background-color: $whiteColor !important;
+    border-color: $darkGreyColor !important;
+    color: $darkGreyColor !important;
+  }
+
+  &.default {
+    background-color: $defaultColor !important;
+    border-color: $defaultColor !important;
+    color: $drakColor !important;
+  }
+}

@@ -1,0 +1,43 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import 'font.nunito';
+// @import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import 'font.poppins';
+
+// Variables
+@import 'variables';
+
+// vuetify scss
+@import 'vuetify';
+
+
+// login pages scss
+@import 'login';
+
+// buttons scss
+@import 'buttons';
+
+// Alerts
+@import 'alerts';
+
+// dropdowns
+@import 'dropdown';
+
+// tables
+@import 'table';
+
+html {
+  font-size: 1rem !important;
+  scroll-behavior: smooth;
+}
+
+body,
+.v-application {
+  font-family: $font-family !important;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}

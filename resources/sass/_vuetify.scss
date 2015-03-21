@@ -1,0 +1,90 @@
+.v-application {
+  div {
+    .primary {
+      background-color: $primaryColor !important;
+      border-color: $primaryColor !important;
+    }
+
+    .primary--text {
+      color: $primaryColor !important;
+      caret-color: $primaryColor !important;
+    }
+
+    .error--text {
+      color: $errorColor !important;
+      caret-color: $errorColor !important;
+    }
+
+    .error {
+      background-color: $errorColor !important;
+      border-color: $errorColor !important;
+    }
+
+    .success {
+      background-color: $successColor !important;
+      border-color: $successColor !important;
+    }
+
+    .success--text {
+      color: $successColor !important;
+      caret-color: $successColor !important;
+    }
+  }
+
+}
+
+.error--text {
+  color: $errorColor !important;
+  caret-color: $errorColor !important;
+}
+
+.v-menu__content {
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    border-radius: 3px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor;
+  }
+}
+
+.create-new-tab-modal {
+  overflow-y: visible !important;
+}
+
+.nde-upload-modal{
+  overflow-y: visible !important;
+}
+
+.w-100 {
+  width: 100% !important
+}
+
+.nde-general-user-form,
+.nde-province-form {
+  .v-label {
+      line-height: 1.5 !important;
+  }
+}
+
+.v-input {
+	.v-input__control {
+		.v-input__slot {
+			box-shadow: 0 3px 1px -2px #424242, 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%) !important;
+		}
+	}
+}

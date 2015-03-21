@@ -1,0 +1,14 @@
+#!/bin/bash
+if command -v nginx &> /dev/null
+    then
+        systemctl restart nginx
+else
+    echo "nginx is missing"
+fi
+
+if command -v nginx &> /dev/null
+    then
+        systemctl restart php-fpm
+else
+    echo "php-fpm is not installed"
+fi

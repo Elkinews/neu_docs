@@ -1,0 +1,3 @@
+#!/bin/bash
+/root/change.sh
+chown -R nde:nde /app/NDE-Frontend/

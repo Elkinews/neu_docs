@@ -1,0 +1,16 @@
+#/bin/bash
+cd /app/NDE-Frontend/
+rm -f /app/NDE-Frontend/public/storage
+composer install -o --no-dev
+npm ci
+./artisan storage:link --relative
+./artisan optimize:clear
+./artisan optimize
+npm run prod
+
+if command -v ./artisan &> /dev/null
+    then
+        ./artisan up
+else
+    echo "./artisan is not working try php artisan up?"
+fi

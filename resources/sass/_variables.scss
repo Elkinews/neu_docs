@@ -1,0 +1,51 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito",
+sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$defaultColor: #ebeced;
+$whiteColor: #ffffff;
+$greyColor: #9a9ea1;
+$darkGreyColor: #343c42;
+$lightGreyColor: #f7f7f7;
+$drakColor: #636B6E;
+
+$primaryColor: #3D769E;
+$primaryGreyColor: #F4F7FB;
+$errorColor: #c32c39;
+$errorGreyColor: #f9e1e1;
+$successColor: #547d36;
+$successGreyColor: #f2fbea;
+$font-family: 'Poppins',
+sans-serif;
+
+%fontNormal {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+}
+
+%fontNormalBold {
+  @extend %fontNormal;
+  font-weight: 700 !important;
+}
+
+%afterIconModalClose{
+	background-color: currentColor;
+	border-radius: 50%;
+	content: '';
+	display: inline-block;
+	height: 100%;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	transform: scale(1.3);
+	width: 100%;
+	transition: opacity 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+	opacity: 0.12;
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /app/NDE-Frontend/
+
+if command -v ./artisan &> /dev/null
+then
+    ./artisan down
+else
+    echo "./artisan is not working try php artisan down?"
+fi
